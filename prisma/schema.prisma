@@ -12,4 +12,10 @@ model User {
   name String
 }
 
-
+model Homeopathy {
+  id          Int    @id @default(autoincrement())
+  name        String
+  description String
+  symptom     String
+  notice      String
+}
