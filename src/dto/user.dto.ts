@@ -1,8 +1,8 @@
-export class UserDto {
+export class User {
     id: string
-    user:string
-    constructor(data:any){
+    name: string
+    constructor(data: any) {
         this.id = data.id
-        this.user = data.user
+        this.name = data.name
     }
 }

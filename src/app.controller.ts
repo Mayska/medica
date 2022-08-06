@@ -7,8 +7,10 @@ export class AppController {
 
   @Get()
   @Render('index')
-  root() {
-    return { message: this.appService.getHello };
+  async root() {
+    const message = await this.appService.getHello();
+    console.log(message)
+    return { message: message };
   }
 
 }
